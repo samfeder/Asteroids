@@ -15,8 +15,8 @@
 <body>
 
   <script>
-      var canvasHeight = window.innerHeight
-      var canvasWidth = window.innerWidth
+      var canvasHeight = 600
+      var canvasWidth = 800
       var canvas = document.getElementById("canvas")
       canvas.setAttribute("width", canvasWidth)
       canvas.setAttribute("height", canvasHeight)
@@ -25,5 +25,10 @@
 
       new Asteroids.GameView(ctx, canvasWidth, canvasHeight).start();
   </script>
+
+  <style>
+  #canvas { background: url('assets/backdrop.jpg') }
+  </style>
+
 </body>
 </html>
